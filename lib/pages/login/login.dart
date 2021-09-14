@@ -77,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
       Navigator.pushReplacement(
           context, MaterialPageRoute(
           builder: (context) =>
-          new HomePage(user: _currentUser))
+          new HomePage(userInfo: providerData2))
       );
     });
     return userCredential;
@@ -111,7 +111,7 @@ class _LoginPageState extends State<LoginPage> {
       Navigator.pushReplacement(
           context, MaterialPageRoute(
           builder: (context) =>
-          new HomePage(user: _currentUser))
+          new HomePage(userInfo: providerData2))
       );
 
       return userCredential;
